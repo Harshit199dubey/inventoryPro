@@ -1,1 +1,1 @@
-# inventoryPro
+# Inventory Pro
