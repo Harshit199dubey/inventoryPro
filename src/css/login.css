@@ -1,0 +1,61 @@
+/* Login page CSS */
+.login--page {
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.login--page .login--side--image {
+  height: 100vh;
+}
+
+.login--page .login--section .heading {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 7.28px;
+}
+
+.login--page .login--section header {
+  margin: 20px 0;
+  line-height: 1.7;
+}
+.login--page .login--section p {
+  font-size: 18px;
+  opacity: 50%;
+}
+
+.login--page .login--section .login--form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.login--page .login--section .login--form .login--credentials {
+  width: 100%;
+  grid-template-columns: 1fr;
+  align-items: stretch;
+}
+
+.login--page .login--section .login--form .login--credentials input {
+  color: black;
+}
+
+.login--page .login--section .login--form .login--wrap {
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  margin: 20px;
+}
+
+.login--page .login--section .login--form .login--wrap.check .login--checkbox {
+  font-size: 15px;
+  justify-self: start;
+}
+
+.login--page .login--section .login--form .login--wrap .btn {
+  width: 90%;
+}
+
+.login--page .login--section .login--form .login--wrap .login--forgot {
+  justify-self: end;
+}

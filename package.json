@@ -1,0 +1,15 @@
+{
+  "name": "inventory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.htm",
+    "build": "parcel build index.htm "
+  },
+  "author": "harshit dubey",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.0.0-beta.2"
+  }
+}

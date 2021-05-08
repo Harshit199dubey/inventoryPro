@@ -1,0 +1,152 @@
+.model {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #272a34b8;
+  z-index: 2;
+}
+.model .model--box {
+  min-height: 200px;
+  max-width: 60vw;
+  min-width: 30vw;
+  border-radius: 10px;
+}
+.model .model--box .fas {
+  font-size: 15px;
+
+  font-weight: 100;
+}
+.model .model--box .header {
+  width: 100%;
+
+  box-shadow: 2px 2px 5px #00000029;
+  grid-template-columns: 5fr 1fr;
+  justify-items: end;
+  padding: 10px 5px;
+}
+.model .model--box .header h4 {
+  text-align: center;
+  width: 80%;
+  margin: 0 15px 0 0;
+}
+.model .model--box .model--box--body {
+  margin: 25px 0;
+}
+.model .model--box .model--box--body form {
+  width: 80%;
+}
+.model .model--box .model--box--body label {
+  font-size: 12px;
+  font-weight: 600;
+}
+.model .model--box .model--box--body p {
+  grid-template-columns: 1fr 9fr;
+  align-items: center;
+  justify-items: center;
+  gap: 20px;
+}
+.model .model--box .model--box--body p input,
+.model .model--box .model--box--body p select {
+  justify-self: start;
+  width: 100%;
+  border: 1px solid #eeeeee;
+}
+
+.model .model--box .model--box--body p input[name='pro-des'] {
+  height: 100%;
+}
+
+.model .model--box .model--box--body p input[type='file'] {
+  display: none;
+}
+.model .model--box .model--box--body .pro--number--inputs {
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 0;
+}
+.model .model--box .model--box--body .pro--number--inputs p {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  align-items: center;
+  justify-items: end;
+}
+.model .model--box .model--box--body .pro--number--inputs p:first-child {
+  justify-items: center;
+}
+.model .model--box .model--box--body .pro--number--inputs input {
+  width: 100%;
+} /*
+.model .model--box .model--box--body form .pro--number--inputs label {
+  width: 100%;
+} */
+.model .model--box .model--box--body .pro-img-sec label[for='pro-img'] {
+  justify-self: start;
+
+  padding: 20px 25px;
+  font-size: 25px;
+  margin: 10px;
+  background: #eeeeee;
+  border-radius: 4px;
+  border: 1px solid #7d7f85;
+}
+
+.model .model--box .model--box--body .pro-img-sec .img-sec {
+  position: relative;
+  width: 100%;
+  justify-content: start;
+}
+
+.model .model--box .model--box--body .pro-img-sec .img-sec .output {
+  position: relative;
+  margin-right: 10px;
+  width: 60px;
+  height: 60px;
+}
+.model .model--box .model--box--body .pro-img-sec .img-sec .output .close {
+  position: absolute;
+  color: #7d7f85;
+  bottom: 80%;
+  left: 80%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0px 0.5px 3px var(--black);
+}
+
+.model .model--box .model--box--body .model--form--btn {
+  justify-self: start;
+}
+
+.model .model--box .model--box--body .model--form--btn button {
+  margin: 20px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 8px 50px;
+}
+
+.model .model--box .model--box--body .model--form--btn button.btn--reset {
+  border: 1px solid var(--black);
+}
+.model .model--box .model--box--body .model--form--btn button.btn--save {
+  background: #7d7f85;
+  color: var(--white);
+}
+
+.model .delete-confirm {
+  flex-direction: column;
+  padding: 20px;
+}
+.model .delete-confirm p {
+  margin: 10px;
+}
+.model .delete-confirm p .btn {
+  min-width: 100px;
+  text-align: center;
+  text-decoration: none;
+}
+.model .err-message {
+  padding: 20px;
+}

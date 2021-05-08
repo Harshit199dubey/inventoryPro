@@ -1,0 +1,259 @@
+* {
+  font-family: 'Source Sans Pro', sans-serif, Fontawesome;
+  /* font-size: medium; */
+  color: #272a34;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+}
+
+:root {
+  --primary: #fa2360;
+  --white: #ffffff;
+  --wrong: rgb(247, 26, 48);
+  --black: #272a34;
+}
+
+/* common Grid code */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+/* common Grid code */
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* primary background  */
+.bg-primary {
+  background: var(--primary);
+  color: #ffffff;
+}
+.bg-secondary {
+  background: var(--white);
+}
+
+/* Fill svg color */
+.fill-primary {
+  fill: var(--primary);
+}
+
+/* Primary font color */
+.primary {
+  color: var(--primary);
+}
+.secondary {
+  color: var(--white);
+}
+
+/* error  */
+.error {
+  color: var(--wrong);
+  font-weight: bolder;
+}
+
+.error--border {
+  border: 1.5px solid rgb(247, 0, 0) !important;
+}
+
+/* hide */
+.hidden {
+  display: none;
+  /* transition: all 0.5 ease; */
+}
+
+.faded--text {
+  color: #7d7f85;
+}
+
+/* default custom css for */
+p {
+  font-size: 18px;
+}
+
+/* Default style for image tag */
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Default style for input & select tag */
+input,
+select {
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px;
+  outline: none;
+  border-bottom: 1px solid #eeeeee;
+}
+input::placeholder,
+select:first-child {
+  font-family: FontAwesome;
+  font-weight: normal;
+  overflow: visible;
+  vertical-align: top;
+  display: inline-block !important;
+  padding-left: 5px;
+  padding-top: 2px;
+}
+
+input[type='checkbox'] {
+  margin: 0;
+}
+
+/* icon css */
+.icon {
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  margin: 0 5px;
+  color: var(--white);
+}
+.icon.small {
+  width: 11px;
+  height: 7px;
+}
+.icon.medium {
+  width: 38px;
+  height: 38px;
+}
+
+/* button releated css */
+.btn {
+  border-radius: 4px;
+  border: none;
+  /* width: 90%; */
+  padding: 10px 15px;
+  outline: none;
+}
+
+.btn.border {
+  border: 0.1px solid #eeeeee;
+}
+
+.btn.no-outline {
+  text-decoration: none;
+}
+
+/* Button click effect */
+.click-effect {
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.click-effect:active {
+  opacity: 90%;
+  color: #0089ff;
+  transform: scale(0.7);
+  box-shadow: 0 2px 5px #333;
+}
+
+/* svg style */
+.svg-logo {
+  fill: #fff;
+  font-size: 2px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.hoz-bar::after {
+  content: '';
+  margin-right: 10px;
+  border-left: 2px solid #eeeeee;
+}
+
+/* sort arrow style */
+.sort-down-arrow::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  transform: matrix(-0.71, -0.71, 0.71, -0.71, 0, 0);
+  background: #eeeeee 0% 0% no-repeat padding-box;
+}
+
+/* pagiantion  button style*/
+.pagination .btn {
+  height: 35px;
+  margin: 5px;
+  padding: 5px 15px;
+}
+
+/* Spinner */
+
+.spinner {
+  margin: 5rem auto;
+  text-align: center;
+}
+.spinner svg,
+.spinner img {
+  height: 3rem;
+  width: 3rem;
+  margin: 5px;
+  fill: var(--primary);
+}
+.spinner svg {
+  animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* tooltip */
+.tooltipright {
+  position: relative;
+}
+.tooltipright .toolttext {
+  min-width: 250px;
+  height: 50%;
+  background-color: var(--white);
+  color: var(--black);
+  box-shadow: 2px 2px 5px var(--black);
+  text-align: left;
+  font-size: small;
+  padding: 0 10px 10px;
+
+  border-radius: 4px;
+  /* padding: 8px; */
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 0;
+  top: 30%;
+  left: 110%;
+}
+.tooltipright .toolttext span {
+  margin: 0 5px 0 0;
+}
+.tooltipright .toolttext::after {
+  content: '';
+  position: absolute;
+  top: 35%;
+  right: 100%;
+  margin-left: -5px;
+  border-width: 5px;
+
+  border-style: solid;
+  border-color: transparent var(--white) transparent transparent;
+}
+
+.fa-info-circle {
+  color: var(--primary);
+}
+.fa-info-circle::before {
+  font-size: 20px;
+}

@@ -1,0 +1,149 @@
+/* Dashboard css */
+.dashboard {
+  grid-template-columns: 13vw 1fr;
+  min-height: 85vh;
+  height: 100%;
+  background: #f4f4f4;
+}
+.dashboard aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 13vw;
+  background: var(--black);
+  height: 100vh;
+  z-index: 1;
+}
+.dashboard h1 {
+  padding: 25px 10px;
+}
+.dashboard aside header .heading {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  background: #0000001a;
+}
+.dashboard .dashboard--nav ul li {
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.dashboard .dashboard--nav a {
+  text-decoration: none;
+}
+
+.dashboard--nav .highlight {
+  border-left: 3px solid var(--primary);
+}
+.dashboard .dashboard--main header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.dashboard .dashboard--main header nav {
+  justify-content: flex-end;
+
+  padding: 13px 15px;
+}
+.dashboard .dashboard--main header nav p {
+  font-size: 13px;
+  color: #4d4f5c;
+  text-align: right;
+}
+.dashboard .dashboard--main main {
+  margin-top: 7%;
+  height: 100%;
+  background: #f4f4f4;
+}
+
+.dashboard .dashboard--main main .dashboard--title {
+  justify-content: space-around;
+}
+.dashboard .dashboard--main main .dashboard--title .dashboard--search input {
+  border: none;
+  margin: 0;
+  padding: 0;
+  height: 90%;
+  width: 90%;
+}
+.dashboard .dashboard--main main .dashboard--title .dashboard--search--add-btn {
+  justify-content: space-between;
+  width: 50%;
+}
+
+.dashboard .dashboard--main main .dashboard--title .dashboard--search {
+  border-radius: 4px;
+  width: 70%;
+  height: 35px;
+}
+.dashboard .dashboard--main main .dashboard--title .btn {
+  width: 25%;
+  height: 35px;
+}
+
+.dashboard .dashboard--main main .dashboard--products .products--list {
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 5px;
+  border: 1px solid var(--white);
+  width: 85%;
+  height: 90%;
+}
+
+.dashboard .dashboard--main main .dashboard--products .products--list ul {
+  width: 100%;
+}
+.dashboard .dashboard--main main .dashboard--products .products--list li p {
+  letter-spacing: 0px;
+  text-align: left;
+  width: 100%;
+  font-size: 13px;
+  font-weight: bold;
+}
+.dashboard .dashboard--main main .dashboard--products .products--list li {
+  align-items: center;
+  width: 100%;
+  grid-template-columns: 1% 4% 15% 2fr 10% repeat(5, 1fr);
+  gap: 10px;
+  margin: 20px 1px;
+  padding: 0 10px;
+  height: 50px;
+  border-bottom: 2px solid #eeeeee;
+}
+
+/* to handle user logout */
+.dashboard .user-log {
+  position: relative;
+}
+
+.dashboard .user-logout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  color: var(--white);
+  background: #4d4f5c;
+  border-radius: 10px;
+  text-align: center;
+  transform: scale(0);
+  transition: all 0.5s ease-in-out;
+}
+.dashboard .user-logout a {
+  text-decoration: none;
+  color: var(--white);
+}
+.dashboard .user-logout.show {
+  transform: scale(1);
+  top: 100%;
+}
+
+.dashboard .empty--product {
+  height: 200px;
+}
+.dashboard .empty--product p {
+  color: #5d5e63a6;
+  text-align: center;
+}

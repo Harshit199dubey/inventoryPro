@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <!-- Import surce Sans pro from google fonts  -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap"
+    />
+
+    <!--import Fontawesome cdn file  for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/src/css/main.css" />
+    <title>Inventory Pro</title>
+    <script defer src="/src/js/controller.js"></script>
+  </head>
+  <body>
+    <!-- Login Page -->
+    <section class="login--page grid">
+      <!-- Left side of login page -->
+      <div class="login--side--image">
+        <img src="resources/images/Group246@2x.png" alt="background-image" />
+      </div>
+
+      <!-- Ridht side of login page -->
+      <div class="login--section">
+        <!-- Login page Header -->
+        <header>
+          <h1 class="heading">
+            INVENTORY <span class="primary heading"> PRO</span>
+          </h1>
+          <p class="faded--text">Welcome back! Please login to your account</p>
+        </header>
+
+        <!-- Login Error message -->
+        <span class="error hidden login--error"
+          >Invalid Username/Password.</span
+        >
+
+        <!-- Login  Form -->
+        <form action="#" class="login--form">
+          <!-- Login credentials -->
+          <div class="login--credentials grid">
+            <input
+              type="text"
+              required
+              placeholder="&#xf007; Username"
+              name="username"
+            />
+            <input
+              type="password"
+              required
+              placeholder="&#xf023; Password"
+              name="password"
+            />
+          </div>
+
+          <!-- form checkbox and forgot password -->
+          <div class="login--wrap check grid">
+            <div class="login--checkbox">
+              <input type="checkbox" name="remember" />
+              <span class="faded--text">Remember me</span>
+            </div>
+            <div class="login--forgot">
+              <a href="#">Forgot password</a>
+            </div>
+          </div>
+
+          <!-- form Buttons -->
+          <div class="login--wrap grid">
+            <button type="submit" class="btn click-effect bg-primary">
+              Login
+            </button>
+            <button
+              class="btn click-effect bg-secondary border signUp"
+              type="button"
+            >
+              Sign Up
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Product Page -->
+    <section class="dashboard grid hidden">
+      <div></div>
+
+      <!-- left Side navigation bar -->
+      <aside>
+        <!-- Logo -->
+        <header>
+          <h1 class="heading secondary">
+            INVENTORY <span class="primary heading"> PRO</span>
+          </h1>
+        </header>
+
+        <!-- Navigation Menu -->
+        <nav class="dashboard--nav">
+          <ul>
+            <li class="highlight">
+              <a href="#" class="secondary">
+                <img
+                  src="/resources/svg/icon_products.svg"
+                  alt=""
+                  class="icon"
+                />
+                Product
+              </a>
+            </li>
+            <li>
+              <a href="#" class="secondary">
+                <span class="fas fa-wifi icon"></span>
+                Help Center
+              </a>
+            </li>
+            <li>
+              <a href="#" class="secondary">
+                <span class="fas fa-cog icon"></span>
+                Settings
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Dashbord Products list area -->
+      <div class="dashboard--main">
+        <!-- login User Detail header -->
+        <header class="bg-secondary">
+          <!-- user login info -->
+          <nav class="flex">
+            <span class="hoz-bar"></span>
+            <p>Harshit Dubey</p>
+            <a href="#">
+              <img
+                src="/resources/svg/small-down.svg"
+                alt="down-arrow"
+                class="icon small"
+              />
+            </a>
+            <!--User Avatar -->
+            <a href="#">
+              <img
+                src="/resources/images/Avatar.png"
+                alt="Harshit Dubey"
+                class="icon medium"
+              />
+            </a>
+          </nav>
+        </header>
+
+        <!-- Products  -->
+        <main>
+          <!-- Products list Header -->
+          <div class="dashboard--title flex">
+            <h1>Products</h1>
+
+            <!-- Product search and add product -->
+            <div class="flex dashboard--search--add-btn">
+              <!-- Search Area -->
+              <div class="dashboard--search flex bg-secondary">
+                <img
+                  src="/resources/svg/SearchIcon.svg"
+                  class="icon"
+                  alt="search"
+                />
+                <input
+                  type="text"
+                  name="search"
+                  required
+                  placeholder="Search"
+                  autocomplete="off"
+                />
+              </div>
+
+              <!-- Add product Button -->
+              <button class="btn click-effect bg-primary add-product">
+                Add Product
+              </button>
+            </div>
+          </div>
+
+          <!-- Products container -->
+          <div class="dashboard--products flex">
+            <div class="products--list bg-secondary flex">
+              <!-- Products list table -->
+              <ul class="list">
+                <!-- Products list table head -->
+                <div class="list-header">
+                  <li class="grid">
+                    <p class="faded--text">#</p>
+                    <p></p>
+                    <p class="faded--text">
+                      PRODUCT <span class="fas fa-sort-down"></span>
+                    </p>
+                    <p class="faded--text">DESCRIPTION</p>
+                    <p class="faded--text">CATEGORY</p>
+                    <p class="faded--text">SKU ID</p>
+                    <p class="faded--text">
+                      QUANTITY <span class="fas fa-sort-down"></span>
+                    </p>
+                    <p class="faded--text">
+                      UNIT PRICE <span class="fas fa-sort"></span>
+                    </p>
+                    <p class="faded--text">
+                      TOTAL PRICE <span class="fas fa-sort"></span>
+                    </p>
+                    <p class="faded--text">ACTION</p>
+                  </li>
+                </div>
+
+                <!-- Products list -->
+                <div class="list-products">
+                  <!-- product Detail -->
+                  <li class="grid">
+                    <p>1</p>
+                    <p>
+                      <img
+                        src="/resources/images/aashirvaad-superior-mp-wheat-atta-v-1-kg@2x.png"
+                        class="icon medium"
+                        alt=""
+                      />
+                    </p>
+                    <p>Aashirvaad Superior</p>
+                    <p>Ashirvaad Atta is a finely milled wheat ...</p>
+                    <p>Food & Beverages</p>
+                    <p>#254635</p>
+                    <p>54 Units</p>
+                    <p>₹ 51.00</p>
+                    <p>₹ 3125.00</p>
+
+                    <!-- Product Edit & Delete button  -->
+                    <p>
+                      <img
+                        src="/resources/svg/baseline-border_color-24px.svg"
+                        class="icon edit"
+                        alt=""
+                      /><img
+                        src="/resources/svg/baseline-delete-24px.svg"
+                        class="icon delete"
+                        alt=""
+                      />
+                    </p>
+                  </li>
+                </div>
+              </ul>
+
+              <!-- Pagination -->
+              <p class="pagination flex">
+                <!-- <a href="#" class="btn click-effect no-outline border">
+                  <span class="fas fa-chevron-left"></span>
+                </a>
+                <a
+                  href="#"
+                  class="btn click-effect bg-primary no-outline border"
+                  >1</a
+                >
+                <a href="#" class="btn click-effect no-outline border">2</a>
+                <a href="#" class="btn click-effect no-outline border">3</a>
+                <a href="#" class="btn click-effect no-outline border">....</a>
+                <a href="#" class="btn click-effect no-outline border">4</a>
+                <a href="#" class="btn click-effect no-outline border">
+                  <span class="fas fa-chevron-right"></span>
+                </a> -->
+              </p>
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>
+
+    <!-- Model -->
+    <section class="model flex hidden">
+      <!-- model box -->
+      <div class="model--box bg-secondary">
+        <!-- Spinner -->
+        <div class="spinner flex hidden">
+          <svg>
+            <use href="resources/svg/icons.svg#icon-loader"></use>
+          </svg>
+          Please wait Loading data....
+        </div>
+        <!-- model box header -->
+        <div class="header grid">
+          <h4 class="primary">SignUp</h4>
+          <span class="icon close">
+            <span class="fas fa-times faded--text click-effect"></span>
+          </span>
+        </div>
+
+        <!-- Model Error  -->
+        <span class="error flex err-message"></span>
+        <!-- model box body -->
+        <div class="model--box--body flex">
+          <!-- signUp form -->
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
